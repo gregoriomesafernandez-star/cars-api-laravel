@@ -31,6 +31,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/gregoriomesafernandez-star/cars-api-laravel.git
+cd cars-api-laravel
 ```
 
 Install dependencies:
@@ -51,6 +52,8 @@ Generate application key:
 php artisan key:generate
 ```
 
+## Database
+
 Configure your database in the `.env` file.
 
 Run migrations:
@@ -58,6 +61,8 @@ Run migrations:
 ```bash
 php artisan migrate
 ```
+
+This command will automatically create all required database tables.
 
 Start the development server:
 
