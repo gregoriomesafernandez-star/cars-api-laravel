@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use Illuminate\Support\Facades\DB;
 use App\Helpers\JwtAuth;
 
 class UserController extends Controller
@@ -32,7 +31,7 @@ class UserController extends Controller
             $isset_user = User::where('email', $email)->first();
 
             if(!isset($isset_user)){
-                
+
                 $user->save();
 
                 $data = [
